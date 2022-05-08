@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="index.css">
+    <script>
+        navigator.serviceWorker.register("sw.js").then((p) => {
+            console.log(p);
+        })
+    </script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <div id="video_stream">
+            <div class="msg">Choose Screen to view</div>
+            <video src=""></video>
+        </div>
+        <nav class="disable">
+            <div class="left">
+                <div style="--c:white; border: none;" id="timeline">
+                    00:00:00
+                </div>
+            </div>
+            <div class="center">
+                <div style="--c:green;--ch:white;" id="play">
+                    <i class="bi-play-fill"></i>
+                </div>
+                <div style="--c:white" id="pause">
+                    <i class="bi-pause-fill"></i>
+                </div>
+                <div style="--c:red;--ch:white;" id="stop">
+                    <i class="bi-stop-fill"></i>
+                </div>
+            </div>
+            <div class="right">
+                <div style="--c:white;" id="preview">
+                    Preview
+                </div>
+                <div style="--c:white;" id="download">
+                    Download
+                </div>
+                <div style="--c:white;" id="back">
+                    Back
+                </div>
+            </div>
+        </nav>
+    </main>
+    <div class="notify"></div>
+    <div class="notification-alt">
+        <h2>Allow notification for good experience. click here to Allow</h2>
+    </div>
+</body>
+</html>
