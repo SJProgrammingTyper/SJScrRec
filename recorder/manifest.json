@@ -1,0 +1,19 @@
+{
+    "name":"Screen Recorder by SJ Programming Typer",
+    "short_name":"SJ ScrRec",
+    "description":"Best Screen Recorder for low-end computers (1 GB RAM) Made by SJ Programming Typer ",
+    "start_url":"index.html",
+    "theme_color":"black",
+    "background_color":"black",
+    "display":"standalone",
+    "icons":[
+        {
+            "sizes":"512x512",
+            "type":"image/png",
+            "src":"favicon.png"
+        }
+    ],
+    "orientation": "portrait-primary"
+    
+
+}
